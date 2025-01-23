@@ -1,0 +1,10 @@
+local set = require("set")
+
+local s1 = set.new({6, 2, 3, 1})
+local s2 = set.new({2, 3})
+local s3 = set.new({9, 1, 3})
+set.print(s1)
+print(set.is_subset(s2, s1))
+set.print(set.union(s1, s3))
+set.print(set.difference(s1, s3))
+set.remove(s1, 1)
